@@ -1,0 +1,186 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+    \hspace{1em}%
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\techStack}[1]{\textit{Tech stack}{:#1}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Ivan Antipin}} & Email : \href{mailto:ivan.antipin@gmail.com}{ivan.antipin@gmail.com}\\
+  & Mobile : +45-50173238 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Moscow Aviation Institute}{Moscow}
+      {Master in computer science and mathematics}{Sep. 1998 -- Feb. 2005}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nordea Bank}{Copenhagen, Denmark}
+      {Expert Developer, Team Lead}{Feb 20015 - Present}
+      
+      \textit{Achievements:}
+      \begin{itemize}  
+      \item Leading 2 teams, 3 people each, mentoring junior programmers
+      \item Worked in ``hack team'' to promote new technologies in department.      
+      \item Developed several crucial services from scratch. Participated in more than half of our department projects, sometimes took over leading to streamline project development.      
+      \item Developed alternative classes generation for Avro.
+      \item Developed gRPC based, fault tolerant major trade bus system.      
+      \item Developed fault tolerant, limits monitoring system based on kafka and event sourcing pattern.
+      \item Developed React UI for limits monitoring system.
+      \item Drove internal cloud initiative to prepare applications to move to real cloud.
+      \item Run technical demos about new technologies.
+      \item Proposed few initiatives to improve cross team productivity:
+	\begin{itemize}  
+	  \item Monolith git repository to share code across teams
+	  \item use gRPC specification for cross team / systems communication.
+	\end{itemize}            
+      \end{itemize}      
+      
+      \techStack{ Java, Kotlin, gRPC, Kafka, Protobuf, Avro, Docker, Cassandra, Redis, Mongo, Oracle, Hashicorp Consul, Vault, c-sharp, ActivePivot, React}
+      
+    \resumeSubheading
+      {Deutsche Bank}{Moscow, Russia}
+      {Senior Software Engineer}{Apr 2012 - Nov 2014}
+      
+      \textit{Achievements:}
+      \begin{itemize}  
+       \item Developed from scratch several risk management system services.
+       \item Developed business rules matching engine.
+      \end{itemize}
+
+      \techStack{ Java, Oracle Coherence}
+
+    \resumeSubheading
+      {Luxoft}{Moscow, Russia}
+      {Senior Software Engineer}{March 2011 - March 2012}
+      
+      \textit{Achievements:}
+      \begin{itemize}  
+       \item Developed low latency pricing system in java. It could process few hundred thousands records a second with microseconds latency in single thread. To achieve low latency we used multicast, cache friendly techniques ( primitive types), reduced number of system calls to prevent context switches, minimized copying of data.
+      \end{itemize}      
+      \techStack{ Java, NIO, Multicast}
+      
+    \resumeSubheading
+      {Deutsche Bank}{Moscow, Russia}
+      {Senior Software Engineer}{Apr 2005 - Nov 2010}
+
+      \textit{Achievements:}
+      \begin{itemize}  
+       \item Developed from scratch several crucial trading systems. 
+       \item Developed order management system based on state machine.
+       \item Developed declarative testing framework for order management system
+      \end{itemize}      
+            
+      \techStack{ Java, JMS}
+      
+  \resumeSubHeadingListEnd
+  
+\section{Side activities}  
+
+\begin{itemize}
+ \item Developed trading strategy backtesting/analytical framework in kotlin, c-sharp, python.
+ \item Made AI research for trading strategies using python, pandas, numpy, skikit-learn libs.
+\end{itemize}
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+      \begin{itemize}  
+	\item \textbf{Languages}{: Java, Scala, Python, c-sharp, SQL}
+	\item \textbf{Technologies}{: Docker, Kafka, Mongo, gRPC, Avro, Protobuf, Cassandra, Hashicorp Consul, Vault}
+	\item \textbf{Other things}{: Unix command line, CS knowledge, git}
+      \end{itemize} 
+      
+\section{Few tips that I apply at work}  
+
+
+\begin{itemize}
+ \item Complexity/entropy of any system tend to increase. This is crucial to control it continuously by refactoring and state removal.
+ \item People are like threads in computers: context switches greatly slow downs those productivity, so you shall minimize people sidetracking. Cross teams communication have to be covered by API contracts if possible. 
+ \item OOP need to be used carefully and in limited scope, especially by junior programmers, because it is stateful and complex by design. 
+ \item Testing : you need to shape your application for easy testing, otherwise people will try to avoid tests writing.
+
+\end{itemize}
+      
+%-------------------------------------------
+\end{document}
+
+
