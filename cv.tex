@@ -92,33 +92,27 @@
 %-----------Employment-----------------
 \section{Employment}
   \resumeSubHeadingListStart
+
     \resumeSubheading
       {Nordea Bank}{Copenhagen, Denmark}
-      {Expert Developer, Team Lead}{Feb 20015 - Present}            
-      \begin{itemize}  
-      \item Leaded 3 different teams. Once two teams at the same time.
-      \item Implemented fault-tolerant, distributed trade system based on Kafka,Mongo,gRPC. Implemented three gRPC interfaces: historical, publish, and subscribe.
-      \item Implemented backend and frontend of fault-tolerant, distributed limits monitoring system using Kotlin/Kafka/React/Event sourcing pattern.  Introduced OpenAPI as a standard API layer between backend and frontend to decouple development. These techniques lately spread in the department.
-      \item Implemented alternative to default Avro, java model generation for simplified Cassandra, and mongo persistence.
-      \item Reimplemented legacy risk system and reduced processing time by order of magnitude.
-      \item Started internal cloud initiative in the department to suit applications for the real cloud. Designed and implemented build and deploy scripts to dockerize applications. Wrote scripts to propagate distributed configuration and secrets.
-      \item Worked in the ``hack team'' for making POCs of technologies in the department.
-      Run demos to share knowledge.
-      \item Proposed and implemented a couple of initiatives to improve cross-team productivity:
-	\begin{itemize}  
-	  \item Monolith git repository to share code across teams
-	  \item use gRPC specification for cross-team / systems communication instead of REST.
-	\end{itemize}            
-      \end{itemize}      
-      
-      \techStack{ Java, Kotlin, gRPC, Kafka, Protobuf, Avro, Docker, Cassandra, Redis, Mongo, Oracle, Hashicorp Consul, Vault, c-sharp, ActivePivot, React, OpenAPI}
-      
+      {Expert Developer, Chief IT Developer (since 2021), Team Lead}{Feb 20015 - Present}
+
+        \textit{Achievements:}
+      \begin{itemize}
+      \item Designed and led implementation of several key systems in Nordea.
+      \item Worked as ``crisis'' tech lead to stabilize problematic projects.
+      \item Worked across teams to promote best programming practices.
+      \end{itemize}
+
+      \techStack{ Kotlin, Java, Typescript, C-sharp, Kafka, GRPC, Protobuf, Avro, Docker, Cassandra, Redis, Mongo, Oracle, ActivePivot, React, OpenAPI}
+
     \resumeSubheading
       {Deutsche Bank}{Moscow, Russia}
-      {Senior Software Engineer}{Apr 2012 - Nov 2014}      
-      \begin{itemize}  
-       \item Implemented an in-memory rule matching engine using a bit index.
-       \item Implemented risk metrics storage based on Oracle Coherence.
+      {Senior Software Engineer (AVP)}{Apr 2012 - Nov 2014}
+
+                \textit{Achievements:}
+      \begin{itemize}
+       \item Designed and implemented couple of systems.
       \end{itemize}
 
       \techStack{ Java, Oracle, Oracle Coherence}
@@ -126,62 +120,52 @@
     \resumeSubheading
       {Luxoft}{Moscow, Russia}
       {Senior Software Engineer}{March 2011 - March 2012}
-      
+
       \textit{Achievements:}
-      \begin{itemize}  
-       \item Participated in the implementation of a low latency pricing system in java. It could process a few hundred thousand records in a second with just 100x microseconds latency in a single thread. To achieve low latency, we used:
-       \begin{itemize}  
-        \item multicast
-        \item cache-friendly techniques ( primitive value types)
-        \item minimum number of system calls to prevent context switches
-        \item single thread
-        \item minimized copying of data (direct buffers)
-       \end{itemize}       
-      \end{itemize}      
+      \begin{itemize}
+       \item Participated in the implementation of a low latency pricing system in java.
+      \end{itemize}
       \techStack{ Java, NIO, Multicast}
-      
+
     \resumeSubheading
       {Deutsche Bank}{Moscow, Russia}
       {Senior Software Engineer}{Apr 2005 - Nov 2010}
 
       \textit{Achievements:}
-      \begin{itemize}  
-       \item Implemented a pricing system. 
-       \item Implemented an order management system based on a state machine with an internal matching engine. 
-       \item Implemented a declarative testing framework for the order management system
-      \end{itemize}      
-            
-      \techStack{ Java, JMS, Oracle}
-      
+      \begin{itemize}
+       \item Designed and implemented number of critical pricing/trading systems.
+      \end{itemize}
+
+      \techStack{ Java, Sockets, JMS, Oracle}
+
   \resumeSubHeadingListEnd
-  
-\section{Side activities}  
+
+\section{Side activities}
 
 \begin{itemize}
- \item Developed trading strategy backtesting/analytical framework in kotlin, java, python.
- \item Made AI research for trading strategies using python, pandas, numpy, scikit-learn libs.
+ \item Strategy back-tester for algo trading in kotlin, java, python.
+ \item Telegram bot for technical analyses (https://web.telegram.org/z/#1072760314).
+ \item AI research for trading strategies with python, pandas, numpy, scikit-learn libs.
 \end{itemize}
 
 %
 %--------SKILLS------------
 \section{Skills}
-      \begin{itemize}  
-	\item \textbf{Languages}{: Java, Kotlin, Scala, Python, c-sharp, SQL, JavaScript}
-	\item \textbf{Technologies}{: Docker, Kafka, Mongo, gRPC, Avro, Protobuf, Cassandra, Hashicorp Consul, Vault}
-	\item \textbf{Other}{: Gradle, Unix command line, CS knowledge, git, basic ML knowledge, pandas, scikit-learn, numpy}
-      \end{itemize} 
-      
-\section{My principles to gain optimal productivity at work}  
+      \begin{itemize}
+	\item \textbf{Languages}{: Kotlin, Java, C-sharp,  Typescript, Python, SQL}
+	\item \textbf{Technologies}{: Kafka, Docker, Mongo, gRPC, React, Avro, Protobuf, Cassandra}
+	\item \textbf{Other}{: gradle, bash, unix, computer science, git, ML knowledge, pandas, scikit-learn, numpy}
+      \end{itemize}
+
+\section{My principles to achieve better team performance}
 
 
 \begin{itemize}
- \item Complexity and entropy of any system tend to increase during the lifetime ( sometimes exponentially) and this is critical to keep it under control by continuous refactoring and state removal.
- \item Need to minimize people sidetracking as context switches are costly ( same analogy correct for computer). We need to avoid too many microtasks not related to each other for the very same reason.
- \item Cross teams' communication has to be covered by API contracts as much as possible to minimize human interaction during systems integration.
- \item OOP stateful and sophisticated by design so need to be used carefully and in a limited scope, mainly for creating frameworks that are rarely needed. 
- \item Testing: we need to shape your application the way it would be easily testable; otherwise, developers try to avoid test writing.
-
+ \item Complexity / technical debt management of the system is in the top of my objectives while designing/implementing project.
+ \item In the team I try to avoid redundant people sidetracking and context switching to micro tasks as this is very expensive.
+ \item I try to replace cross teams communication with systems API when possible.
+ \item I try to stick with functional approach and reduce OOP as this usually reduces complexity.
 \end{itemize}
-      
+
 %-------------------------------------------
 \end{document}
