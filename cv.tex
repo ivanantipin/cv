@@ -35,6 +35,11 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+
+%\setlist[enumerate]{leftmargin=20mm, label=\alph*)}
+\setlist[itemize]{leftmargin=2mm}
+%\setlist[subitem]{leftmargin=2mm}
+
 % Sections formatting
 \titleformat{\section}{
     \vspace{-4pt}\scshape\raggedright\large
@@ -93,8 +98,9 @@
 %-----------ABOUT-----------------
 \section{Profile}
 \resumeSubHeadingListStart
-Technology agnostic, passionate developer and experienced technical lead with more that 15 projects completed.
+Technology agnostic, passionate developer and experienced technical lead with more than 15 projects completed.
 I have deep understanding of software development and practical mind. Fluent at designing and implementing systems from scratch.
+Recognized by senior management as one of best performers in Nordea IT.
 \resumeSubHeadingListEnd
 
 
@@ -103,79 +109,74 @@ I have deep understanding of software development and practical mind. Fluent at 
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Nordea Bank}{Copenhagen, Denmark}
-{Chief IT Developer, Team Lead}{Feb 20015 - Present}
-
-\textit{Achievements:}
+{Nordea Bank}{Copenhagen, Denmark} {Chief IT Developer, Tech Lead}{Feb 20015 - Present}
 \begin{itemize}
 \item Designed and implemented highly available, horizontally scalable, long term storage with gRPC API.
 \subitem {
-\techStack { Java,Cassandra,gRPC,Kafka,Avro,Docker}
+\techStack { Java/Cassandra/gRPC/Kafka/Avro/Docker}
 }
-\item Reengineered, designed API and led main Nordea trade storage and validation system development.
+\item Reimplemented and led main Nordea trade storage and validation system. Designed API and scaled development. Led the team of 3 devs. Was rewarded as a significant achievement of IT in organization.
 \subitem {
-\techStack {Java,Mongo,gRPC,Kafka,Docker}
+\techStack {Java/Mongo/gRPC,Kafka/Docker}
 }
-\item Designed, implemented and led in-house replacement of failed 3rd party limit management system.
+\item Designed and implemented from scratch in-house replacement of 3rd party risk managing system. Frontend and backend. Led the team of 5 devs.
 \subitem {
-\techStack {Kotlin,Kafka,Docker,REST,OpenApi,React,TypeScript}
+\techStack {Kotlin/Kafka/Docker/REST/OpenApi/React/TypeScript}
 }
-\item Designed and led implementation of alternative to extremely expensive 3rd party product for complex messaging processing.
+\item Designed and led implementation of alternative for 3rd party "too-expensive" system for complex SWIFT message processing with a very tight deadline. Frontend and backend. Led the team of 3 devs. Was rewarded as a significant achievement of IT in organization.
 \subitem{
-\techStack { Kotlin,Kafka,Docker,SQLite,REST,OpenAPI,TypeScript,React}
+\techStack { Kotlin/Kafka/Docker/SQLite/REST/OpenAPI/TypeScript/React}
 }
-\item Reimplemented and led development of API for strategic static data system.
+\item Reimplemented troubled API infrastructure for strategic static data system. Was rewarded as a significant achievement of IT in organization.
 \subitem{
-\techStack { Kotlin,Kafka,Docker,CQEngine,REST,OpenAPI,TypeScript,React}
+\techStack { Kotlin/Kafka/Docker/CQEngine/REST/OpenAPI/TypeScript/React}
 }
-\item Replaced legacy Nordea major risk engine and speed it up more than x10 times.
+\item Replaced legacy Nordea major risk engine and sped it up more than x10 times.
 \subitem{
-\techStack { Java,REST,Redis,Oracle}
+\techStack { Java/REST/Redis/Oracle/ActiveViam}
 }
 \item Worked across teams to promote best programming practices.
 \item Developed interview process pipeline.
-\item Influenced gRPC based API development in Nordea as alternative to REST for system-to-system communications.
-\item Influenced and promoted Kotlin usage in Nordea as better alternative to Java.
+\item Influenced gRPC based API development in Nordea as an alternative to the REST for system-to-system communications.
+\item Influenced and promoted Kotlin usage in Nordea as an alternative to Java.
 \end{itemize}
 
 \resumeSubheading
 {Deutsche Bank}{Moscow, Russia}
 {Senior Software Engineer (AVP)}{Apr 2012 - Nov 2014}
-
-\textit{Achievements:}
 \begin{itemize}
 \item Designed and implemented backend of risk management system.
 \subitem{
-\techStack { Java,Oracle Coherence}
+\techStack { Java/Oracle Coherence}
 }
 \end{itemize}
 
 \resumeSubheading
 {Luxoft}{Moscow, Russia}
 {Senior Software Engineer}{March 2011 - March 2012}
-
-\textit{Achievements:}
 \begin{itemize}
-\item Developmed low latency price distribution system with zero GC.
+\item Implemented low latency price distribution system with zero GC.
+\subitem{
+\techStack{ Java/NIO/Multicast}
+}
 \end{itemize}
-\techStack{ Java,NIO,Multicast}
 
 \resumeSubheading
 {Deutsche Bank}{Moscow, Russia}
 {Senior Software Engineer}{Apr 2005 - Nov 2010}
-
-\textit{Achievements:}
 \begin{itemize}
 \item Designed and implemented order management system with embedded matching engine. Reduced latency and throughput x5 comparing to previous system.
 \item Implemented declarative BDD framework ( a-la Cucumber style that was non-existent at that time).
 \item Reimplemented price distribution component of AutobahnFX.
 \end{itemize}
+\subitem{
+\techStack{ Java/JMS/Sockets/Oracle}
+}
 
-\techStack{ Java,JMS,Sockets,Oracle}
 
 \resumeSubHeadingListEnd
 
-\section{Side activities}
+\section{Side projects}
 
 \begin{itemize}
 \item Strategy back-tester for algo trading in kotlin, typescript.
@@ -188,7 +189,7 @@ I have deep understanding of software development and practical mind. Fluent at 
 \section{Skills}
 \begin{itemize}
 \item \textbf{Languages}{: Kotlin,Java,C-sharp,Typescript,Python,SQL}
-\item \textbf{Technologies}{: Kafka,Docker,Mongo,gRPC,React,Avro,Protobuf,Cassandra}
+\item \textbf{Technologies}{: Kafka, Docker,Mongo,gRPC,React,Avro,Protobuf,Cassandra}
 \item \textbf{Other}{: Algorithms,Computer Science,Machine Learning,Gradle,Bash,Unix,Git}
 \end{itemize}
 
@@ -209,15 +210,6 @@ Incisive and highly autonomous, Ivan is one of the most potent developers I know
 He swiftly gets to the core of a problem, makes sensible, pragmatic technical choices, then produces - and as requirements evolve, rapidly iterates upon - clean, succinct solutions. While he has no difficulty in adopting new technologies when they are the right tool for the job, he defaults to simplicity in his designs. If something needs to be done well, and quickly, then ask Ivan to do it.
 \end{displayquote}
 
-\textbf{Arasa Velaigam}
-
-Head of Subsidiary Accounting at Nordea
-\begin{displayquote}
-Ivan is an excellent developer and driver of technical solutions to very complex problems. His communication is efficient and he is able to quickly identify challenges, evaluate alternatives and solutions in an open discussion across varying user groups.
-I have witnessed Ivan continually develop his technical skills increasing his delivery capabilities and skillset.
-He is pragmatic and result orientated thus easily able to balance delivery timelines with changing requirements, priorities and infrastructure dependency issues outside his scope.
-\end{displayquote}
-
 \textbf{Anton Polyakov}
 
 Senior Engineering Manager at Google
@@ -228,15 +220,14 @@ Don't be misled by Ivan's direct communication style, it comes handy when you wi
 \end{displayquote}
 
 
-\section{My development practices}
+\textbf{Arasa Velaigam}
 
-
-\begin{itemize}
-\item Complexity and technical debt management is in the top of my objectives while designing and implementing project. Improper management often leads to a exponential complexity growth to the system functionality.
-\item While leading a team I try to avoid redundant people sidetracking and context switching to micro tasks as this is very expensive.
-\item Cross team communication can be greatly improved by extensive usage of systems contracts/APIs, as people are "slow" computers are "fast".
-\item I prefer functional approach over OOP which is often overused.
-\end{itemize}
+Head of Subsidiary Accounting at Nordea
+\begin{displayquote}
+Ivan is an excellent developer and driver of technical solutions to very complex problems. His communication is efficient and he is able to quickly identify challenges, evaluate alternatives and solutions in an open discussion across varying user groups.
+I have witnessed Ivan continually develop his technical skills increasing his delivery capabilities and skillset.
+He is pragmatic and result orientated thus easily able to balance delivery timelines with changing requirements, priorities and infrastructure dependency issues outside his scope.
+\end{displayquote}
 
 %-------------------------------------------
 \end{document}
